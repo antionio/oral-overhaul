@@ -48,7 +48,7 @@ MonoBehaviour:
   ToolSprites:
   - {fileID: 8699069900992395679, guid: 430f0d76f112d40aea23dcd9911d6919, type: 3}
   - {fileID: -9166200356469041071, guid: 430f0d76f112d40aea23dcd9911d6919, type: 3}
-  ToolRadius: 0.1
+  ToolRadius: 0.01
 --- !u!1 &881719722191405120
 GameObject:
   m_ObjectHideFlags: 0
