@@ -53,12 +53,14 @@ public class ToolManager : MonoBehaviour
                 if (h.collider.CompareTag("Tooth"))
                 {
                     Debug.Log("Hit a tooth");
+                    h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
                     return; // do not proceed, tooth is prioritized
                 }
             }
 
             var firstHit = hits[0];
             Debug.Log("Hit a " + firstHit.collider.gameObject.name);
+            firstHit.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.DontRequireReceiver);
         }
     }
     
