@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
 
 public class ToolManager : MonoBehaviour
 {
@@ -31,6 +33,35 @@ public class ToolManager : MonoBehaviour
         ToolSpriteRenderer.sprite = ToolSprites[(int)toolType];
     }
 
+    private void UseSelectedTool()
+    {
+
+        switch (SelectedToolType)
+        {
+            case ToolType.Hand:
+                break;
+            case ToolType.Drill:
+                break;
+        }
+
+        var hits = Physics2D.CircleCastAll(transform.position, .5f, Vector2.zero);
+        if (hits.Length > 0)
+        {
+            // first check tooth
+            foreach (RaycastHit2D h in hits)
+            {
+                if (h.collider.CompareTag("Tooth"))
+                {
+                    Debug.Log("Hit a tooth");
+                    return; // do not proceed, tooth is prioritized
+                }
+            }
+
+            var firstHit = hits[0];
+            Debug.Log("Hit a " + firstHit.collider.gameObject.name);
+        }
+    }
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -39,6 +70,11 @@ public class ToolManager : MonoBehaviour
         } else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SetTool(ToolType.Drill);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            UseSelectedTool();
         }
         
         var mousePos = Input.mousePosition;
