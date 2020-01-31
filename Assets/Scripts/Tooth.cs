@@ -5,9 +5,11 @@ using UnityEngine;
 public class Tooth : MonoBehaviour
 {
 
+    public Animator Animator;
+    
     public void OnUseTool(ToolManager.ToolType toolType)
     {
-        
+        Animator.SetTrigger("Hit");
     }
     
 }

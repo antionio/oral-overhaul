@@ -18,6 +18,7 @@ public class ToolManager : MonoBehaviour
     public SpriteRenderer ToolSpriteRenderer;
 
     public Sprite[] ToolSprites;
+    public float ToolRadius;
     
     private ToolType SelectedToolType;
 
@@ -44,7 +45,7 @@ public class ToolManager : MonoBehaviour
                 break;
         }
 
-        var hits = Physics2D.CircleCastAll(transform.position, .5f, Vector2.zero);
+        var hits = Physics2D.CircleCastAll(transform.position, ToolRadius, Vector2.zero);
         if (hits.Length > 0)
         {
             // first check tooth
