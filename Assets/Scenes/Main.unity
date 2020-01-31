@@ -1208,12 +1208,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tool
       objectReference: {fileID: 0}
-    - target: {fileID: 881719720407031163, guid: 6b4ba3fc0efda4ed6a4780d5d09be3d1,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000,
-        type: 0}
     - target: {fileID: 881719720407031140, guid: 6b4ba3fc0efda4ed6a4780d5d09be3d1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1268,16 +1262,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 881719722191405121, guid: 6b4ba3fc0efda4ed6a4780d5d09be3d1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 881719722191405121, guid: 6b4ba3fc0efda4ed6a4780d5d09be3d1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b4ba3fc0efda4ed6a4780d5d09be3d1, type: 3}

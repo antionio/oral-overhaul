@@ -17,7 +17,7 @@ public class ToolManager : MonoBehaviour
     [Header("Tool Sprite")]
     public SpriteRenderer ToolSpriteRenderer;
 
-    public Sprite[] ToolSprites;
+    public GameObject[] ToolSprites;
     public float ToolRadius;
     
     private ToolType SelectedToolType;
@@ -31,19 +31,17 @@ public class ToolManager : MonoBehaviour
     private void SetTool(ToolType toolType)
     {
         SelectedToolType = toolType;
-        ToolSpriteRenderer.sprite = ToolSprites[(int)toolType];
+
+        foreach (var s in ToolSprites)
+        {
+            s.SetActive(false);
+        }
+        
+        ToolSprites[(int)SelectedToolType].SetActive(true);
     }
 
     private void UseSelectedTool()
     {
-
-        switch (SelectedToolType)
-        {
-            case ToolType.Hand:
-                break;
-            case ToolType.Drill:
-                break;
-        }
 
         var hits = Physics2D.CircleCastAll(transform.position, ToolRadius, Vector2.zero);
         if (hits.Length > 0)
