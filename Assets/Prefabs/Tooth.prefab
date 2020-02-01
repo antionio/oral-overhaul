@@ -53,6 +53,7 @@ MonoBehaviour:
   - {fileID: -5285232641000320779, guid: d9db3aa835c5d42d598d497aa5e54565, type: 3}
   - {fileID: 7143735833849444073, guid: d9db3aa835c5d42d598d497aa5e54565, type: 3}
   - {fileID: -4135875577474786283, guid: d9db3aa835c5d42d598d497aa5e54565, type: 3}
+  - {fileID: 2023379913675353043, guid: 658e93a4ec4004720bb68a824cc8323f, type: 3}
   ToohSpurtParticle: {fileID: 7566319427342237823}
   ToothShatteredTime: 1
 --- !u!95 &2138129981626713082

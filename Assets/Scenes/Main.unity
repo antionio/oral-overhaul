@@ -205,6 +205,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -3961164648755000494, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 4015737222314249339, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -6737377882722045731, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -7766207979318175051, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -332,6 +352,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 778532514812742237, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 6740844357617342806, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 3640266321023751607, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 5936382495677774166, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -691,6 +731,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -2049397419552211041, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 6689738367904505327, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 2023379913675353043, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -1112656508256461291, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -1203,6 +1263,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -5246484173237767540, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 8232539122442279738, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -8747985509961204564, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 2243958238426969219, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -1293,6 +1373,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 8118067437341972731, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -2312822530965138681, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -7326262263208133206, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 3559900657245244481, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -1373,6 +1473,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -2049397419552211041, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 6689738367904505327, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 2023379913675353043, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -1112656508256461291, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -1548,6 +1668,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -5246484173237767540, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 8232539122442279738, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -8747985509961204564, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 2243958238426969219, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -1643,6 +1783,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 778532514812742237, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 6740844357617342806, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 3640266321023751607, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 5936382495677774166, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_FlipX
@@ -1738,6 +1898,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -3961164648755000494, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 4015737222314249339, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -6737377882722045731, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -7766207979318175051, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -2000,6 +2180,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 8118067437341972731, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -2312822530965138681, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -7326262263208133206, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 3559900657245244481, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
