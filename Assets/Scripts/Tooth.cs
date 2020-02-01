@@ -67,7 +67,7 @@ public class Tooth : MonoBehaviour
 
                 if (toothCondition == ToothCondition.Broken) return;
                 
-                Face.Instance.DoOuchie();
+                Face.Instance.DoOuchie(true);
                 
                 ToohSpurtParticle.Play();
                 Screenshake.Instance.ScreenShake(0.01f, 0.1f);
@@ -88,6 +88,12 @@ public class Tooth : MonoBehaviour
                 SetToothCondition(ToothCondition.Filled);
                 ToolManager.Instance.PrepareTool(false);
                 
+                break;
+            case ToolManager.ToolType.Mirror:
+                Face.Instance.DoOuchie();
+                break;
+            case ToolManager.ToolType.Scraper:
+                Face.Instance.DoOuchie();
                 break;
         }
         

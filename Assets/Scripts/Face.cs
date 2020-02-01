@@ -33,11 +33,15 @@ public class Face : SingletonBehaviour<Face>
         audioStateTime += Time.deltaTime;
     }
 
-    public void DoOuchie()
+    public void DoOuchie(bool badOuchie = false)
     {
         foreach (var e in Eyes)
         {
             e.Hurt(true);
+            if (badOuchie)
+            {
+                e.Tear();
+            }
         }
         
         if (audioStateTime < AudioIntervalSeconds)

@@ -6,6 +6,7 @@ public class Eye : MonoBehaviour
 {
 
     public Animator Animator;
+    public ParticleSystem ParticleSystem;
     
     public void OnUseTool(ToolManager.ToolType toolType)
     {
@@ -18,5 +19,11 @@ public class Eye : MonoBehaviour
         
         if (fromOuchie == false)
             Face.Instance.DoOuchie();
+    }
+
+    public void Tear()
+    {
+        if (ParticleSystem.isPlaying) return;
+        ParticleSystem.Play();
     }
 }
