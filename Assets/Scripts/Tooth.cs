@@ -14,7 +14,8 @@ public class Tooth : MonoBehaviour
         Cracked = 1,
         Shattered = 2,
         Decay = 3,
-        Broken = 4
+        Filled = 4,
+        Broken = 5
     }
     
     [Header("Visuals")]
@@ -78,6 +79,13 @@ public class Tooth : MonoBehaviour
                     OnDrillTooth();
                 }
                 break;
+            case ToolManager.ToolType.Filler:
+
+                if (toothCondition != ToothCondition.Cracked) return;
+
+                SetToothCondition(ToothCondition.Filled);
+                
+                break;
         }
         
     }
@@ -90,6 +98,9 @@ public class Tooth : MonoBehaviour
                 SetToothCondition(ToothCondition.Cracked);
                 break;
             case ToothCondition.Decay:
+                SetToothCondition(ToothCondition.Cracked);
+                break;
+            case ToothCondition.Filled:
                 SetToothCondition(ToothCondition.Cracked);
                 break;
             case ToothCondition.Cracked:

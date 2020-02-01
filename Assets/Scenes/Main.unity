@@ -225,6 +225,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7766207979318175051, guid: 658e93a4ec4004720bb68a824cc8323f,
         type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -1967220348667595940, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -371,6 +376,11 @@ PrefabInstance:
       propertyPath: ToothConditionSprites.Array.data[3]
       value: 
       objectReference: {fileID: 5936382495677774166, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 5052085858019300908, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
         type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
@@ -831,6 +841,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1112656508256461291, guid: d9db3aa835c5d42d598d497aa5e54565,
         type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -2381199115780355341, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -1239,6 +1254,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.024509203
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -281490634215031744, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_FlipX
@@ -1405,12 +1425,12 @@ PrefabInstance:
     - target: {fileID: 413973389514279534, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 413973389514279534, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.03
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 413973389514279534, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
@@ -1476,6 +1496,11 @@ PrefabInstance:
       propertyPath: ToothConditionSprites.Array.data[3]
       value: 
       objectReference: {fileID: 2243958238426969219, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 9152760788284102256, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
         type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
@@ -1587,6 +1612,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3559900657245244481, guid: 658e93a4ec4004720bb68a824cc8323f,
         type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 1339616768821128270, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -1686,6 +1716,11 @@ PrefabInstance:
       propertyPath: ToothConditionSprites.Array.data[0]
       value: 
       objectReference: {fileID: -1112656508256461291, guid: d9db3aa835c5d42d598d497aa5e54565,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -2381199115780355341, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
         type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
@@ -1810,12 +1845,12 @@ PrefabInstance:
     - target: {fileID: 413973389514279534, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.8
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 413973389514279534, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.03
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 413973389514279534, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
@@ -1882,6 +1917,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2243958238426969219, guid: 658e93a4ec4004720bb68a824cc8323f,
         type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 9152760788284102256, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -1925,7 +1965,7 @@ PrefabInstance:
     - target: {fileID: 413973389514279534, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.25
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 413973389514279534, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
@@ -1996,6 +2036,11 @@ PrefabInstance:
       propertyPath: ToothConditionSprites.Array.data[3]
       value: 
       objectReference: {fileID: 5936382495677774166, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 5052085858019300908, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
         type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
@@ -2111,6 +2156,11 @@ PrefabInstance:
       propertyPath: ToothConditionSprites.Array.data[3]
       value: 
       objectReference: {fileID: -7766207979318175051, guid: 658e93a4ec4004720bb68a824cc8323f,
+        type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -1967220348667595940, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
         type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
@@ -2394,6 +2444,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3559900657245244481, guid: 658e93a4ec4004720bb68a824cc8323f,
         type: 3}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 1339616768821128270, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Sprite
@@ -2554,6 +2609,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.81
       objectReference: {fileID: 0}
+    - target: {fileID: 220117322, guid: adf593e3d5aaa44cbb490361fa1bbd36, type: 3}
+      propertyPath: ToothConditionSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -281490634215031744, guid: 53b46f51be8fb4dd39c7f736fdba80ac,
+        type: 3}
     - target: {fileID: 7345296665757176910, guid: adf593e3d5aaa44cbb490361fa1bbd36,
         type: 3}
       propertyPath: m_Size.x
