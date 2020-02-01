@@ -57,11 +57,16 @@ public class Tooth : MonoBehaviour
         switch (toolType)
         {
             case ToolManager.ToolType.Hand:
-                Screenshake.Instance.ScreenShake(0.05f, 0.02f);
+                if (toothCondition != ToothCondition.Healthy) {
+                    Face.Instance.PlayOuchSound();
+                    Screenshake.Instance.ScreenShake(0.1f, 0.025f);
+                }
                 break;
             case ToolManager.ToolType.Drill:
 
                 if (toothCondition == ToothCondition.Broken) return;
+                
+                Face.Instance.PlayOuchSound();
                 
                 ToohSpurtParticle.Play();
                 Screenshake.Instance.ScreenShake(0.01f, 0.1f);

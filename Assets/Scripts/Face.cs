@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Face : MonoBehaviour
+public class Face : SingletonBehaviour<Face>
 {
 
     public ParticleSystem BloodSpurtParticle;
@@ -21,15 +21,7 @@ public class Face : MonoBehaviour
                 BloodSpurtParticle.transform.position = ToolManager.Instance.transform.position;
                 BloodSpurtParticle.Play();
 
-                if (audioStateTime < AudioIntervalSeconds)
-                {
-                    break;
-                }
-                
-                audioStateTime = 0f;
-                if (AudioSource.isPlaying == false) {
-                    AudioSource.PlayOneShot(HurtClip);
-                }
+                PlayOuchSound();
                 break;
         }
     }
@@ -37,5 +29,18 @@ public class Face : MonoBehaviour
     private void Update()
     {
         audioStateTime += Time.deltaTime;
+    }
+
+    public void PlayOuchSound()
+    {
+        if (audioStateTime < AudioIntervalSeconds)
+        {
+            return;
+        }
+                
+        audioStateTime = 0f;
+        if (AudioSource.isPlaying == false) {
+            AudioSource.PlayOneShot(HurtClip);
+        }
     }
 }
