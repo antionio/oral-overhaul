@@ -63,5 +63,9 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
         StartMenu.SetActive(false);
         EndMenu.SetActive(true);
     }
-    
+
+    public bool MenuActive()
+    {
+        return Intro.activeSelf || StartMenu.activeSelf || EndMenu.activeSelf;
+    }
 }

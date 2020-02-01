@@ -292,6 +292,8 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     
     private void Update()
     {
+        if (UI_Ingame.Instance.MenuActive()) return;
+        
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SetTool(ToolType.Hand);
