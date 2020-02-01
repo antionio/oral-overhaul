@@ -99,6 +99,7 @@ public class ToolManager : MonoBehaviour
 
         if (SelectedToolType == ToolType.Drill) return;
         
+        
         var hits = Physics2D.CircleCastAll(transform.position, ToolRadius, Vector2.zero);
         if (hits.Length > 0)
         {
@@ -109,10 +110,34 @@ public class ToolManager : MonoBehaviour
                 {
                     Debug.Log("Hit a tooth");
                     h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+                    
+                    if (AudioSource.isPlaying == false)
+                    {
+                        AudioSource.clip = ToolUseClips[(int) SelectedToolType];
+                        AudioSource.loop = false;
+                        AudioSource.Play();
+                    }
+
                     return; // do not proceed, tooth is prioritized
                 }
             }
+            
+            // second check face
+            foreach (RaycastHit2D h in hits)
+            {
+                if (h.collider.CompareTag("Face"))
+                {
+                    if (AudioSource.isPlaying == false)
+                    {
+                        AudioSource.clip = ToolSecondaryUseClips[(int) SelectedToolType];
+                        AudioSource.loop = false;
+                        AudioSource.Play();
+                    }
 
+                    return;
+                }
+            }
+            
             var firstHit = hits[0];
             Debug.Log("Hit a " + firstHit.collider.gameObject.name);
             firstHit.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.DontRequireReceiver);
