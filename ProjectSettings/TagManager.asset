@@ -8,6 +8,7 @@ TagManager:
   - Face
   - Tongue
   - Eye
+  - Saliva
   layers:
   - Default
   - TransparentFX

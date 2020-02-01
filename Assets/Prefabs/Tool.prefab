@@ -141,6 +141,7 @@ MonoBehaviour:
   - {fileID: 3913658170445336535}
   - {fileID: 7416341649317189906}
   - {fileID: 7072226787960806181}
+  - {fileID: 1064333345524264009}
   ToolPreparedSprites:
   - {fileID: 0}
   - {fileID: 0}
@@ -154,12 +155,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9456aa8d2f2f54b4983db11494eb7d5b, type: 3}
   - {fileID: 8300000, guid: a0d073d3e166d43c0bc1b7dedcba0aa0, type: 3}
   - {fileID: 8300000, guid: 737a8dac945ac4bce91939de1ef09cf8, type: 3}
+  - {fileID: 8300000, guid: 2dd3d185971714af4b83e721bc1e544e, type: 3}
   ToolSecondaryUseClips:
   - {fileID: 8300000, guid: 0922450a310524ce591c6bf6c61c7fa4, type: 3}
   - {fileID: 8300000, guid: 58eec96582a164de0a75188a418a81a3, type: 3}
   - {fileID: 8300000, guid: 45e2ab2403bc54d379478b794d0641c0, type: 3}
   - {fileID: 8300000, guid: a0d073d3e166d43c0bc1b7dedcba0aa0, type: 3}
   - {fileID: 8300000, guid: 737a8dac945ac4bce91939de1ef09cf8, type: 3}
+  - {fileID: 8300000, guid: 2dd3d185971714af4b83e721bc1e544e, type: 3}
   ToolRadius: 0.01
 --- !u!82 &5582835561078452736
 AudioSource:

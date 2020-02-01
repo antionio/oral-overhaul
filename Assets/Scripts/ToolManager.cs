@@ -16,6 +16,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         Filler = 2,
         Mirror = 3,
         Scraper = 4,
+        Vacuum = 5
     }
 
     [Header("Visual")]
@@ -84,7 +85,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
 
     private bool HoldUseSelectedTool(bool holding)
     {
-        if (SelectedToolType != ToolType.Drill) return false; // only drill is hold
+        if (SelectedToolType != ToolType.Drill && SelectedToolType != ToolType.Vacuum) return false; // only drill & vacuum is held
         
         if (holding == false)
         {
@@ -123,7 +124,25 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                     return true; // do not proceed, tooth is prioritized
                 }
             }
-            // first check tooth
+            
+            // second check tongue
+            foreach (RaycastHit2D h in hits)
+            {
+                if (h.collider.CompareTag("Saliva"))
+                {
+                    h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+                    
+                    if (AudioSource.isPlaying == false)
+                    {
+                        AudioSource.clip = ToolSecondaryUseClips[(int) SelectedToolType];
+                        AudioSource.loop = false;
+                        AudioSource.Play();
+                    }
+
+                    return true;
+                }
+            }
+            
             foreach (RaycastHit2D h in hits)
             {
                 if (h.collider.CompareTag("Tongue"))
@@ -153,7 +172,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     private void UseSelectedTool()
     {
 
-        if (SelectedToolType == ToolType.Drill) return;
+        if (SelectedToolType == ToolType.Drill || SelectedToolType == ToolType.Vacuum) return;
         
         Animator.SetTrigger(SelectedToolType + "_Use");
 
@@ -175,6 +194,24 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                     }
 
                     return; // do not proceed, tooth is prioritized
+                }
+            }
+            
+            // second check tongue
+            foreach (RaycastHit2D h in hits)
+            {
+                if (h.collider.CompareTag("Saliva"))
+                {
+                    h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+                    
+                    if (AudioSource.isPlaying == false)
+                    {
+                        AudioSource.clip = ToolSecondaryUseClips[(int) SelectedToolType];
+                        AudioSource.loop = false;
+                        AudioSource.Play();
+                    }
+
+                    return;
                 }
             }
             
@@ -255,6 +292,9 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         } else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             SetTool(ToolType.Scraper);
+        } else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            SetTool(ToolType.Vacuum);
         }
 
         if (Input.GetMouseButton(0))
