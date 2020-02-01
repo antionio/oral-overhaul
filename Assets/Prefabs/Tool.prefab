@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 881719720407031140}
   - component: {fileID: 881719720407031141}
   - component: {fileID: 5582835561078452736}
+  - component: {fileID: 4776743558746010530}
   m_Layer: 0
   m_Name: Tool
   m_TagString: Untagged
@@ -129,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DontDestroyOnLoad: 0
+  Animator: {fileID: 4776743558746010530}
   ToolSpriteRenderer: {fileID: 881719722191405122}
   ToolSprites:
   - {fileID: 1576928700}
@@ -238,6 +240,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &4776743558746010530
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881719720407031163}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52c44a0bb17ac4452a57b988b6c1556e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &881719722191405120
 GameObject:
   m_ObjectHideFlags: 0

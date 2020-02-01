@@ -17,6 +17,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     }
 
     [Header("Visual")]
+    public Animator Animator;
     public SpriteRenderer ToolSpriteRenderer;
     public GameObject[] ToolSprites;
     [Header("Audio")]
@@ -98,6 +99,8 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     {
 
         if (SelectedToolType == ToolType.Drill) return;
+        
+        Animator.SetTrigger(SelectedToolType + "_Use");
         
         
         var hits = Physics2D.CircleCastAll(transform.position, ToolRadius, Vector2.zero);
