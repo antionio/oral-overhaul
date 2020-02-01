@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToolInventory : MonoBehaviour
+public class ToolInventory : SingletonBehaviour<ToolInventory>
 {
 
     public GameObject[] Tools;
@@ -10,16 +10,17 @@ public class ToolInventory : MonoBehaviour
 
     public void HideSelectedTool(ToolManager.ToolType selectedToolType)
     {
-        foreach (var tool in Tools)
+        foreach (var t in Tools)
         {
-            tool.SetActive(true);
+            t.GetComponentInChildren<SpriteRenderer>().enabled = true;
         }
         
         if (selectedToolType == ToolManager.ToolType.Hand)
         {
             return;
         }
-        
-        Tools[(int)selectedToolType - 1].SetActive(false);
+
+        var tool = Tools[(int) selectedToolType - 1];
+        tool.GetComponentInChildren<SpriteRenderer>().enabled = false;
     }
 }

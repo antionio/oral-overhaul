@@ -71,7 +71,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         SetTool(ToolType.Hand);
     }
 
-    private void SetTool(ToolType toolType)
+    public void SetTool(ToolType toolType)
     {
         if (toolParticleSystem != null && toolParticleSystem.isPlaying)
             toolParticleSystem.Stop();
@@ -88,7 +88,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         tool.SetActive(true);
         toolParticleSystem = tool.GetComponentInChildren<ParticleSystem>();
 
-        FindObjectOfType<ToolInventory>().HideSelectedTool(SelectedToolType);
+        ToolInventory.Instance.HideSelectedTool(SelectedToolType);
     }
 
     private bool HoldUseSelectedTool(bool holding)
