@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Transactions;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Cursor = UnityEngine.Cursor;
 
-public class ToolManager : MonoBehaviour
+public class ToolManager : SingletonBehaviour<ToolManager>
 {
 
     public enum ToolType
@@ -71,10 +72,8 @@ public class ToolManager : MonoBehaviour
             {
                 if (h.collider.CompareTag("Tooth"))
                 {
-                    Debug.Log("Hit a tooth");
                     h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
-                    Screenshake.Instance.ScreenShake(0.01f, 0.1f);
-                    
+
                     var secondaryClip = ToolSecondaryUseClips[(int) SelectedToolType];
                     if (AudioSource.isPlaying == false || AudioSource.clip != secondaryClip)
                     {
@@ -109,9 +108,7 @@ public class ToolManager : MonoBehaviour
             {
                 if (h.collider.CompareTag("Tooth"))
                 {
-                    Debug.Log("Hit a tooth");
                     h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
-                    Screenshake.Instance.ScreenShake(0.05f, 0.02f);
 
                     if (AudioSource.isPlaying == false)
                     {
@@ -129,6 +126,8 @@ public class ToolManager : MonoBehaviour
             {
                 if (h.collider.CompareTag("Face"))
                 {
+                    h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+                    
                     if (AudioSource.isPlaying == false)
                     {
                         AudioSource.clip = ToolSecondaryUseClips[(int) SelectedToolType];
