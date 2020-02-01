@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 public class UI_Ingame : SingletonBehaviour<UI_Ingame>
 {
 
+    [Header("Menus")]
     public GameObject Intro;
     public GameObject StartMenu;
     public GameObject InGame;
     public GameObject EndMenu;
+
+    [Header("Music")]
+    public AudioClip MusicIntro;
+    public AudioClip MusicIngame;
+    public AudioSource MusicAudioSource;
 
     private bool allowSkip = false;
 
@@ -20,6 +26,9 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
 
     private void BeginIntroSequence()
     {
+        MusicAudioSource.clip = MusicIntro;
+        MusicAudioSource.Play();
+        
         allowSkip = false;
         Cursor.visible = true;
         InGame.SetActive(false);
@@ -53,6 +62,9 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
     public void BeginIngameSequence()
     {
         if (allowSkip == false) return;
+        
+        MusicAudioSource.clip = MusicIngame;
+        MusicAudioSource.Play();
         
         Cursor.visible = false;
         InGame.SetActive(true);
