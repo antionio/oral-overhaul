@@ -31,6 +31,8 @@ public class Saliva : MonoBehaviour
 
     private void Update()
     {
+        if (UI_Ingame.Instance.MenuActive()) return;
+        
         salivaTimer += Time.deltaTime;
         salivaTimer = Mathf.Clamp(salivaTimer, 0f, SalivaIncreaseInterval + 1f);
 
