@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Transactions;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Cursor = UnityEngine.Cursor;
 
@@ -26,6 +27,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     public SpriteRenderer ToolSpriteRenderer;
     public GameObject[] ToolSprites;
     public GameObject[] ToolPreparedSprites;
+    public Text MirrorText;
     [Header("Audio")]
     public AudioSource AudioSource;
     public AudioClip[] ToolUseClips;
@@ -93,10 +95,12 @@ public class ToolManager : SingletonBehaviour<ToolManager>
 
     private bool HoldUseSelectedTool(bool holding)
     {
-        if (SelectedToolType != ToolType.Drill && SelectedToolType != ToolType.Vacuum && SelectedToolType != ToolType.Waterer) return false; // only drill & vacuum & waterer is held
+        if (SelectedToolType != ToolType.Drill && SelectedToolType != ToolType.Vacuum && SelectedToolType != ToolType.Waterer && SelectedToolType != ToolType.Mirror) return false;
         
         if (holding == false)
         {
+            MirrorText.gameObject.SetActive(false);
+            
             if (toolParticleSystem != null && toolParticleSystem.isPlaying)
                 toolParticleSystem.Stop();
             
@@ -124,6 +128,41 @@ public class ToolManager : SingletonBehaviour<ToolManager>
             {
                 if (h.collider.CompareTag("Tooth"))
                 {
+                    if (SelectedToolType == ToolType.Mirror)
+                    {
+                        var tooth = h.collider.gameObject.GetComponent<Tooth>();
+                        var condition = tooth.GetToothCondition();
+
+                        MirrorText.gameObject.SetActive(true);
+                        switch (condition)
+                        {
+                            case Tooth.ToothCondition.Healthy:
+                                MirrorText.text = "+1";
+                                MirrorText.color = Color.green;
+                                break;
+                            case Tooth.ToothCondition.Filled:
+                                MirrorText.text = "+1";
+                                MirrorText.color = Color.green;
+                                break;
+                            case Tooth.ToothCondition.Broken:
+                                MirrorText.text = "+-0";
+                                MirrorText.color = Color.yellow;
+                                break;
+                            case Tooth.ToothCondition.Decay:
+                                MirrorText.text = "-1";
+                                MirrorText.color = Color.red;
+                                break;
+                            case Tooth.ToothCondition.Cracked:
+                                MirrorText.text = "-1";
+                                MirrorText.color = Color.red;
+                                break;
+                            case Tooth.ToothCondition.Shattered:
+                                MirrorText.text = "-1";
+                                MirrorText.color = Color.red;
+                                break;
+                        }
+                    }
+                    
                     h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
 
                     var secondaryClip = ToolSecondaryUseClips[(int) SelectedToolType];
@@ -185,7 +224,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     private void UseSelectedTool()
     {
 
-        if (SelectedToolType == ToolType.Drill || SelectedToolType == ToolType.Vacuum || SelectedToolType == ToolType.Waterer) return;
+        if (SelectedToolType == ToolType.Drill || SelectedToolType == ToolType.Vacuum || SelectedToolType == ToolType.Waterer || SelectedToolType == ToolType.Mirror) return;
         
         Animator.SetTrigger(SelectedToolType + "_Use");
         if (toolParticleSystem != null && toolParticleSystem.isPlaying == false)
