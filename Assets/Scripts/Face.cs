@@ -11,6 +11,8 @@ public class Face : SingletonBehaviour<Face>
     public AudioClip HurtClip;
     public float AudioIntervalSeconds;
 
+    public Eye[] Eyes;
+    
     private float audioStateTime;
 
     public void OnUseTool(ToolManager.ToolType toolType)
@@ -21,7 +23,7 @@ public class Face : SingletonBehaviour<Face>
                 BloodSpurtParticle.transform.position = ToolManager.Instance.transform.position;
                 BloodSpurtParticle.Play();
 
-                PlayOuchSound();
+                DoOuchie();
                 break;
         }
     }
@@ -31,8 +33,13 @@ public class Face : SingletonBehaviour<Face>
         audioStateTime += Time.deltaTime;
     }
 
-    public void PlayOuchSound()
+    public void DoOuchie()
     {
+        foreach (var e in Eyes)
+        {
+            e.Hurt(true);
+        }
+        
         if (audioStateTime < AudioIntervalSeconds)
         {
             return;

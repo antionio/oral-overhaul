@@ -59,7 +59,7 @@ public class Tooth : MonoBehaviour
         {
             case ToolManager.ToolType.Hand:
                 if (toothCondition != ToothCondition.Healthy) {
-                    Face.Instance.PlayOuchSound();
+                    Face.Instance.DoOuchie();
                     Screenshake.Instance.ScreenShake(0.1f, 0.025f);
                 }
                 break;
@@ -67,7 +67,7 @@ public class Tooth : MonoBehaviour
 
                 if (toothCondition == ToothCondition.Broken) return;
                 
-                Face.Instance.PlayOuchSound();
+                Face.Instance.DoOuchie();
                 
                 ToohSpurtParticle.Play();
                 Screenshake.Instance.ScreenShake(0.01f, 0.1f);

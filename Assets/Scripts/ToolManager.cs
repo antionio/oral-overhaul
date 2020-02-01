@@ -196,6 +196,24 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                 }
             }
             
+            // check eyes
+            foreach (RaycastHit2D h in hits)
+            {
+                if (h.collider.CompareTag("Eye"))
+                {
+                    h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+                    
+                    if (AudioSource.isPlaying == false)
+                    {
+                        AudioSource.clip = ToolSecondaryUseClips[(int) SelectedToolType];
+                        AudioSource.loop = false;
+                        AudioSource.Play();
+                    }
+
+                    return;
+                }
+            }
+            
             // check face
             foreach (RaycastHit2D h in hits)
             {
