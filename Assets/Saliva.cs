@@ -31,10 +31,8 @@ public class Saliva : MonoBehaviour
 
     private void Update()
     {
-        
         salivaTimer += Time.deltaTime;
         salivaTimer = Mathf.Clamp(salivaTimer, 0f, SalivaIncreaseInterval + 1f);
-        
 
         if (salivaTimer >= SalivaIncreaseInterval)
         {
@@ -47,17 +45,16 @@ public class Saliva : MonoBehaviour
     private void SetLevel(SalivaLevel salivaLevel)
     {
         level = salivaLevel;
-        Collider.enabled = level != SalivaLevel.None;
         Animator.SetTrigger(level.ToString());
     }
 
     public void OnUseTool(ToolManager.ToolType toolType)
     {
-        if (level == SalivaLevel.None) return;
         
         switch (toolType)
         {
             case ToolManager.ToolType.Vacuum:
+                if (level == SalivaLevel.None) break;
                 salivaSuctionTimer += Time.deltaTime * 5f;
                 salivaTimer = 0f;
                 if (salivaSuctionTimer >= SuctionEffectInterval)
@@ -65,6 +62,9 @@ public class Saliva : MonoBehaviour
                     SetLevel(level - 1);
                     salivaSuctionTimer = 0f;
                 }
+                break;
+            case ToolManager.ToolType.Waterer:
+                salivaTimer += Time.deltaTime * 5f;
                 break;
         }
     }

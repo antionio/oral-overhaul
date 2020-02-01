@@ -16,7 +16,8 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         Filler = 2,
         Mirror = 3,
         Scraper = 4,
-        Vacuum = 5
+        Vacuum = 5,
+        Waterer = 6,
     }
 
     [Header("Visual")]
@@ -33,6 +34,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     
     private ToolType SelectedToolType;
     private bool prepred = false;
+    private ParticleSystem toolParticleSystem;
 
     private List<ToolType> GetToolsThatRequirePreparation()
     {
@@ -70,6 +72,9 @@ public class ToolManager : SingletonBehaviour<ToolManager>
 
     private void SetTool(ToolType toolType)
     {
+        if (toolParticleSystem != null && toolParticleSystem.isPlaying)
+            toolParticleSystem.Stop();
+        
         PrepareTool(false);
         SelectedToolType = toolType;
 
@@ -77,24 +82,31 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         {
             s.SetActive(false);
         }
-        
-        ToolSprites[(int)SelectedToolType].SetActive(true);
+
+        var tool = ToolSprites[(int) SelectedToolType];
+        tool.SetActive(true);
+        toolParticleSystem = tool.GetComponentInChildren<ParticleSystem>();
 
         FindObjectOfType<ToolInventory>().HideSelectedTool(SelectedToolType);
     }
 
     private bool HoldUseSelectedTool(bool holding)
     {
-        if (SelectedToolType != ToolType.Drill && SelectedToolType != ToolType.Vacuum) return false; // only drill & vacuum is held
+        if (SelectedToolType != ToolType.Drill && SelectedToolType != ToolType.Vacuum && SelectedToolType != ToolType.Waterer) return false; // only drill & vacuum & waterer is held
         
         if (holding == false)
         {
+            if (toolParticleSystem != null && toolParticleSystem.isPlaying)
+                toolParticleSystem.Stop();
+            
             Animator.ResetTrigger(SelectedToolType + "_Use");
             AudioSource.Stop();
             return true;
         }
 
         Animator.SetTrigger(SelectedToolType + "_Use");
+        if (toolParticleSystem != null && toolParticleSystem.isPlaying == false)
+            toolParticleSystem.Play();
         
         if (AudioSource.isPlaying == false)
         {
@@ -172,9 +184,11 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     private void UseSelectedTool()
     {
 
-        if (SelectedToolType == ToolType.Drill || SelectedToolType == ToolType.Vacuum) return;
+        if (SelectedToolType == ToolType.Drill || SelectedToolType == ToolType.Vacuum || SelectedToolType == ToolType.Waterer) return;
         
         Animator.SetTrigger(SelectedToolType + "_Use");
+        if (toolParticleSystem != null && toolParticleSystem.isPlaying == false)
+            toolParticleSystem.Play();
 
         var hits = Physics2D.CircleCastAll(transform.position, ToolRadius, Vector2.zero);
         if (hits.Length > 0)
@@ -295,6 +309,9 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         } else if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             SetTool(ToolType.Vacuum);
+        } else if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            SetTool(ToolType.Waterer);
         }
 
         if (Input.GetMouseButton(0))
