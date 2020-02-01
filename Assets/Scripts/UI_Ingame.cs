@@ -58,7 +58,10 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
 
     public void BeginEndGameSequence()
     {
-        
+        Cursor.visible = true;
+        Intro.SetActive(false);
+        StartMenu.SetActive(false);
+        EndMenu.SetActive(true);
     }
     
 }

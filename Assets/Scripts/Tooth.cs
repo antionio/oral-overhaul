@@ -27,6 +27,12 @@ public class Tooth : MonoBehaviour
     public float ToothShatteredTime = 2f;
 
     private ToothCondition toothCondition = ToothCondition.Healthy;
+
+    public ToothCondition GetToothCondition()
+    {
+        return toothCondition;
+    }
+
     private float toothShatteredTimeCounter;
 
     private void OnEnable()
