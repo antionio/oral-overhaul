@@ -28,7 +28,6 @@ public class ToolManager : MonoBehaviour
 
     private void OnEnable()
     {
-        Cursor.visible = false;
         SetTool(ToolType.Hand);
     }
 
