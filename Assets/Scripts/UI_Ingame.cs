@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI_Ingame : SingletonBehaviour<UI_Ingame>
 {
 
     public GameObject Intro;
     public GameObject StartMenu;
+    public GameObject InGame;
     public GameObject EndMenu;
 
     private bool allowSkip = false;
@@ -20,6 +22,7 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
     {
         allowSkip = false;
         Cursor.visible = true;
+        InGame.SetActive(false);
         Intro.SetActive(true);
         StartMenu.SetActive(false);
         EndMenu.SetActive(false);
@@ -39,6 +42,7 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
         
         allowSkip = false;
         Cursor.visible = true;
+        InGame.SetActive(false);
         Intro.SetActive(false);
         StartMenu.SetActive(true);
         EndMenu.SetActive(false);
@@ -51,6 +55,7 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
         if (allowSkip == false) return;
         
         Cursor.visible = false;
+        InGame.SetActive(true);
         Intro.SetActive(false);
         StartMenu.SetActive(false);
         EndMenu.SetActive(false);
@@ -59,6 +64,7 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
     public void BeginEndGameSequence()
     {
         Cursor.visible = true;
+        InGame.SetActive(false);
         Intro.SetActive(false);
         StartMenu.SetActive(false);
         EndMenu.SetActive(true);
@@ -67,5 +73,10 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
     public bool MenuActive()
     {
         return Intro.activeSelf || StartMenu.activeSelf || EndMenu.activeSelf;
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("Main");
     }
 }

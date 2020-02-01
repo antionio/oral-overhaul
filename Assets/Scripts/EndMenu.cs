@@ -39,7 +39,6 @@ public class EndMenu : MonoBehaviour
             foreach (var r in renderers)
             {
                 r.sortingLayerName = "UI";
-                r.sortingLayerID = LayerMask.NameToLayer("UI");
             }
 
             if (t.gameObject.name.Contains("Top"))
