@@ -11,7 +11,8 @@ public class ToolManager : MonoBehaviour
     public enum ToolType
     {
         Hand = 0,
-        Drill = 1
+        Drill = 1,
+        Filler = 2
     }
 
     [Header("Visual")]
@@ -41,6 +42,8 @@ public class ToolManager : MonoBehaviour
         }
         
         ToolSprites[(int)SelectedToolType].SetActive(true);
+
+        FindObjectOfType<ToolInventory>().HideSelectedTool(SelectedToolType);
     }
 
     private bool HoldUseSelectedTool(bool holding)
@@ -115,6 +118,9 @@ public class ToolManager : MonoBehaviour
         } else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SetTool(ToolType.Drill);
+        } else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SetTool(ToolType.Filler);
         }
 
         if (Input.GetMouseButton(0))

@@ -143,48 +143,6 @@ TextureImporter:
       name: teeft_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 89
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2180d221f753946c28df76557630cb4e
-      internalID: -3790478295526708845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teeft_1
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 89
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b6f965a298d54e02ac4b259f8d0b454
-      internalID: -5334162741089114105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teeft_2
-      rect:
-        serializedVersion: 2
         x: 35
         y: 89
         width: 6
@@ -196,14 +154,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1703500e9c4f46caba34a7b3007c887
-      internalID: 2552032976727602634
+      spriteID: a376f33cfc0fb4432b2fc67cff685e31
+      internalID: -3790478295526708845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: teeft_3
+      name: teeft_1
       rect:
         serializedVersion: 2
         x: 44
@@ -217,7 +175,49 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0b42cba77cb641dc9a80f655a9e9944
+      spriteID: 1e724629ed8644d9289e95da96a47a37
+      internalID: -5334162741089114105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeft_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 75
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbd72fb6f8544cbcb4619ae6eac40df
+      internalID: 2552032976727602634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeft_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 66
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78178d0935e22478ba61ebb820112e80
       internalID: -5275199201608881024
       vertices: []
       indices: 
@@ -225,111 +225,6 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: teeft_4
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 63
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e73feb4b046664cacb281bb8b137b277
-      internalID: 2669259760499665825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teeft_5
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 57
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9f4876a5b1b140c4a6e2aa353cd4b77
-      internalID: 6293519972200271176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teeft_6
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 57
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eba30b6a05b5249aba96f477996063a2
-      internalID: 6659920846362910648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teeft_7
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 63
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 197c17619d60b4844ab42051ffdb05ee
-      internalID: -5791194856028653615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teeft_8
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 54
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fadd5aa86b9fa43089ba5445372e7198
-      internalID: 8093531924005015326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teeft_9
       rect:
         serializedVersion: 2
         x: 34
@@ -343,8 +238,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a57e248b7cf554d65b7307582e0ee6f7
-      internalID: 5438604365351486680
+      spriteID: 7be7f86a7f5ad420fbf9e48e691b3ff1
+      internalID: 2669259760499665825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeft_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 57
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca8b483bf1e442968e317e8d3e653cf
+      internalID: 6293519972200271176
       vertices: []
       indices: 
       edges: []
