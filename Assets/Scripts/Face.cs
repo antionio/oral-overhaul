@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Face : SingletonBehaviour<Face>
 {
-
+    
     public ParticleSystem BloodSpurtParticle;
     public AudioSource AudioSource;
     public AudioClip HurtClip;

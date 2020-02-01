@@ -86,6 +86,24 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                     return true; // do not proceed, tooth is prioritized
                 }
             }
+            // first check tooth
+            foreach (RaycastHit2D h in hits)
+            {
+                if (h.collider.CompareTag("Tongue"))
+                {
+                    h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+
+                    var secondaryClip = ToolSecondaryUseClips[(int) SelectedToolType];
+                    if (AudioSource.isPlaying == false || AudioSource.clip != secondaryClip)
+                    {
+                        AudioSource.clip = secondaryClip;
+                        AudioSource.loop = true;
+                        AudioSource.Play();
+                    }
+                    
+                    return true; // do not proceed, tooth is prioritized
+                }
+            }
 
             var firstHit = hits[0];
             Debug.Log("Hit a " + firstHit.collider.gameObject.name);
@@ -124,7 +142,25 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                 }
             }
             
-            // second check face
+            // second check tongue
+            foreach (RaycastHit2D h in hits)
+            {
+                if (h.collider.CompareTag("Tongue"))
+                {
+                    h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+                    
+                    if (AudioSource.isPlaying == false)
+                    {
+                        AudioSource.clip = ToolSecondaryUseClips[(int) SelectedToolType];
+                        AudioSource.loop = false;
+                        AudioSource.Play();
+                    }
+
+                    return;
+                }
+            }
+            
+            // check face
             foreach (RaycastHit2D h in hits)
             {
                 if (h.collider.CompareTag("Face"))
