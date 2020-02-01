@@ -9,6 +9,6 @@ public class Tongue : MonoBehaviour
 
     public void OnUseTool(ToolManager.ToolType toolType)
     {
-        Animator.SetTrigger(toolType + "_Use");
+        //Animator.SetTrigger(toolType + "_Use");
     }
 }

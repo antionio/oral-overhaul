@@ -156,8 +156,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         if (SelectedToolType == ToolType.Drill) return;
         
         Animator.SetTrigger(SelectedToolType + "_Use");
-        
-        
+
         var hits = Physics2D.CircleCastAll(transform.position, ToolRadius, Vector2.zero);
         if (hits.Length > 0)
         {
@@ -255,8 +254,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         if (Input.GetMouseButtonUp(0))
         {
             HoldUseSelectedTool(false);
-        }
-       
+        }       
         
         var mousePos = Input.mousePosition;
         var mouseWorldPos = Camera.main.ScreenToWorldPoint(mousePos);
