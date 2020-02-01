@@ -18,6 +18,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         Scraper = 4,
         Vacuum = 5,
         Waterer = 6,
+        Syringe = 7
     }
 
     [Header("Visual")]
@@ -312,6 +313,9 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         } else if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             SetTool(ToolType.Waterer);
+        } else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SetTool(ToolType.Syringe);
         }
 
         if (Input.GetMouseButton(0))
