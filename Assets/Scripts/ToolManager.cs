@@ -73,6 +73,7 @@ public class ToolManager : MonoBehaviour
                 {
                     Debug.Log("Hit a tooth");
                     h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+                    Screenshake.Instance.ScreenShake(0.01f, 0.2f);
                     
                     var secondaryClip = ToolSecondaryUseClips[(int) SelectedToolType];
                     if (AudioSource.isPlaying == false || AudioSource.clip != secondaryClip)
@@ -110,7 +111,8 @@ public class ToolManager : MonoBehaviour
                 {
                     Debug.Log("Hit a tooth");
                     h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
-                    
+                    Screenshake.Instance.ScreenShake(0.05f, 0.02f);
+
                     if (AudioSource.isPlaying == false)
                     {
                         AudioSource.clip = ToolUseClips[(int) SelectedToolType];
