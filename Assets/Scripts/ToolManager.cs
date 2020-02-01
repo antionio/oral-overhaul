@@ -22,6 +22,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     public Animator Animator;
     public SpriteRenderer ToolSpriteRenderer;
     public GameObject[] ToolSprites;
+    public GameObject[] ToolPreparedSprites;
     [Header("Audio")]
     public AudioSource AudioSource;
     public AudioClip[] ToolUseClips;
@@ -30,6 +31,36 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     public float ToolRadius;
     
     private ToolType SelectedToolType;
+    private bool prepred = false;
+
+    private List<ToolType> GetToolsThatRequirePreparation()
+    {
+        var list = new List<ToolType>();
+        list.Add(ToolType.Filler);
+        return list;
+    }
+
+    public bool IsToolPrepared()
+    {
+        if (GetToolsThatRequirePreparation().Contains(SelectedToolType))
+        {
+            return prepred;
+        }
+        return true;
+    }
+
+    public void PrepareTool(bool prepared)
+    {
+        try
+        {
+            ToolPreparedSprites[(int) SelectedToolType].SetActive(prepared);
+            prepred = prepared;
+        }
+        catch
+        {
+            Debug.Log("No prepared sprite");
+        }
+    }
 
     private void OnEnable()
     {
@@ -38,6 +69,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
 
     private void SetTool(ToolType toolType)
     {
+        PrepareTool(false);
         SelectedToolType = toolType;
 
         foreach (var s in ToolSprites)

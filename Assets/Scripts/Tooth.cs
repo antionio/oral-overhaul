@@ -83,7 +83,10 @@ public class Tooth : MonoBehaviour
 
                 if (toothCondition != ToothCondition.Cracked) return;
 
+                if (ToolManager.Instance.IsToolPrepared() == false) return;
+
                 SetToothCondition(ToothCondition.Filled);
+                ToolManager.Instance.PrepareTool(false);
                 
                 break;
         }
