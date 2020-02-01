@@ -13,7 +13,9 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     {
         Hand = 0,
         Drill = 1,
-        Filler = 2
+        Filler = 2,
+        Mirror = 3,
+        Scraper = 4,
     }
 
     [Header("Visual")]
@@ -51,12 +53,15 @@ public class ToolManager : SingletonBehaviour<ToolManager>
     private bool HoldUseSelectedTool(bool holding)
     {
         if (SelectedToolType != ToolType.Drill) return false; // only drill is hold
-
+        
         if (holding == false)
         {
+            Animator.ResetTrigger(SelectedToolType + "_Use");
             AudioSource.Stop();
             return true;
         }
+
+        Animator.SetTrigger(SelectedToolType + "_Use");
         
         if (AudioSource.isPlaying == false)
         {
@@ -195,6 +200,12 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         } else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             SetTool(ToolType.Filler);
+        } else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SetTool(ToolType.Mirror);
+        } else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SetTool(ToolType.Scraper);
         }
 
         if (Input.GetMouseButton(0))
