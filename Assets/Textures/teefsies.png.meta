@@ -198,17 +198,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 80
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90b31ebfb0a8947359d4c46590a36973
+      spriteID: f9faf5ffb2a8c44f79458f8d449d3bc4
       internalID: 778532514812742237
       vertices: []
       indices: 
@@ -219,17 +219,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 80
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b739b2b8f47d34063a647379e88c9631
+      spriteID: f6f34ae83208b4308a3ee6fa0d064390
       internalID: -5246484173237767540
       vertices: []
       indices: 
@@ -239,18 +239,18 @@ TextureImporter:
       name: teefsies_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 48
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 787a67866bd5f4b53844d575c1058fa3
+      spriteID: f8fca0bde2f6e463ab508e8b74a39b1b
       internalID: -5285232641000320779
       vertices: []
       indices: 
@@ -260,18 +260,18 @@ TextureImporter:
       name: teefsies_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 64
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f653e741b0632400eb1f4ce354b20e63
+      spriteID: d8faaaf98905342be999ce32596b1ff2
       internalID: -1112656508256461291
       vertices: []
       indices: 
@@ -281,18 +281,18 @@ TextureImporter:
       name: teefsies_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 80
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ede2daab02a2425785b67a6c7b8a095
+      spriteID: d9c03f87032054ecc845e0d9106fc085
       internalID: 8118067437341972731
       vertices: []
       indices: 
@@ -302,18 +302,18 @@ TextureImporter:
       name: teefsies_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
+        x: 96
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b88d43667a48a477b921094ed1c6571a
+      spriteID: 6a92bf955eacb4a29bbe42b6f1654e5c
       internalID: -3961164648755000494
       vertices: []
       indices: 
@@ -324,17 +324,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0a8e9628af364c40980b0412b09b1e1
+      spriteID: 540f62f57fa7440478d6bfc3cb7b45ba
       internalID: 6740844357617342806
       vertices: []
       indices: 
@@ -345,17 +345,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34341cc70d624a4483353be10eb5aa8
+      spriteID: 9f8b8d26a0b684f8e9b667b66b47b872
       internalID: 8232539122442279738
       vertices: []
       indices: 
@@ -365,18 +365,18 @@ TextureImporter:
       name: teefsies_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70a13f077cf9d45b2adbff451f3410d4
+      spriteID: 7c6e116625ef4460e8099b4173089afb
       internalID: 7143735833849444073
       vertices: []
       indices: 
@@ -386,18 +386,18 @@ TextureImporter:
       name: teefsies_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 64
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e363811cdb10a4944a4fc0af825312d5
+      spriteID: aed334781dda44a898243a45a137b19b
       internalID: -2049397419552211041
       vertices: []
       indices: 
@@ -407,18 +407,18 @@ TextureImporter:
       name: teefsies_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8deb96c87b1234651a8c557314b513b9
+      spriteID: 6083a6a00650d4086845eb170a0ad675
       internalID: -2312822530965138681
       vertices: []
       indices: 
@@ -428,18 +428,18 @@ TextureImporter:
       name: teefsies_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 96
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15912b9144ba849839328a24aa987ff1
+      spriteID: 7145977358c4342a895fb3f07e20bddb
       internalID: 4015737222314249339
       vertices: []
       indices: 
@@ -450,17 +450,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bb77766bcf47419082e5b6f984f567b
+      spriteID: 80e1664e5cfc145a2b2868df802b97f1
       internalID: 3640266321023751607
       vertices: []
       indices: 
@@ -471,17 +471,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a088ff7d58f394165a7cb598f064a026
+      spriteID: ceb344055634d4253b189c9aa3fff102
       internalID: -8747985509961204564
       vertices: []
       indices: 
@@ -491,18 +491,18 @@ TextureImporter:
       name: teefsies_14
       rect:
         serializedVersion: 2
-        x: 0
+        x: 48
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35764ae843c524daa9376fd8037e41ce
+      spriteID: 25af7706ab65d4d11b8e91d522bbbda1
       internalID: -4135875577474786283
       vertices: []
       indices: 
@@ -512,18 +512,18 @@ TextureImporter:
       name: teefsies_15
       rect:
         serializedVersion: 2
-        x: 16
+        x: 64
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f56fa8a7d2a314be8b198cc39aba3c95
+      spriteID: 6e827d277bd7d40b5a2b415c1547823b
       internalID: 6689738367904505327
       vertices: []
       indices: 
@@ -533,18 +533,18 @@ TextureImporter:
       name: teefsies_16
       rect:
         serializedVersion: 2
-        x: 32
+        x: 80
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9593b7cd82542424f878aeaa8c0b1159
+      spriteID: 9dbf79bc0434a4bc6a70ff8f9c52d89c
       internalID: -7326262263208133206
       vertices: []
       indices: 
@@ -554,18 +554,18 @@ TextureImporter:
       name: teefsies_17
       rect:
         serializedVersion: 2
-        x: 48
+        x: 96
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6695549f77b5b4311a50639db4794961
+      spriteID: 76dd4835d597e42d19b98265a6980885
       internalID: -6737377882722045731
       vertices: []
       indices: 
