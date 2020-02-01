@@ -21,6 +21,7 @@ public class ToolManager : MonoBehaviour
     [Header("Audio")]
     public AudioSource AudioSource;
     public AudioClip[] ToolUseClips;
+    public AudioClip[] ToolSecondaryUseClips;
     [Header("Settings")]
     public float ToolRadius;
     
@@ -72,6 +73,15 @@ public class ToolManager : MonoBehaviour
                 {
                     Debug.Log("Hit a tooth");
                     h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+                    
+                    var secondaryClip = ToolSecondaryUseClips[(int) SelectedToolType];
+                    if (AudioSource.isPlaying == false || AudioSource.clip != secondaryClip)
+                    {
+                        AudioSource.clip = secondaryClip;
+                        AudioSource.loop = true;
+                        AudioSource.Play();
+                    }
+                    
                     return true; // do not proceed, tooth is prioritized
                 }
             }

@@ -137,6 +137,9 @@ MonoBehaviour:
   ToolUseClips:
   - {fileID: 0}
   - {fileID: 8300000, guid: 8cce8ee1f1edd4fd6a53adec6db46a6c, type: 3}
+  ToolSecondaryUseClips:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 58eec96582a164de0a75188a418a81a3, type: 3}
   ToolRadius: 0.01
 --- !u!82 &5582835561078452736
 AudioSource:
