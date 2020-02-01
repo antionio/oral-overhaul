@@ -68,7 +68,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_Sprite: {fileID: 1559704157218881296, guid: 430f0d76f112d40aea23dcd9911d6919,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -150,9 +150,15 @@ MonoBehaviour:
   ToolUseClips:
   - {fileID: 8300000, guid: 721fc4ccbbc374d09b9d7b04fd672ea2, type: 3}
   - {fileID: 8300000, guid: 8cce8ee1f1edd4fd6a53adec6db46a6c, type: 3}
+  - {fileID: 8300000, guid: 9456aa8d2f2f54b4983db11494eb7d5b, type: 3}
+  - {fileID: 8300000, guid: a0d073d3e166d43c0bc1b7dedcba0aa0, type: 3}
+  - {fileID: 8300000, guid: 737a8dac945ac4bce91939de1ef09cf8, type: 3}
   ToolSecondaryUseClips:
   - {fileID: 8300000, guid: 0922450a310524ce591c6bf6c61c7fa4, type: 3}
   - {fileID: 8300000, guid: 58eec96582a164de0a75188a418a81a3, type: 3}
+  - {fileID: 8300000, guid: 45e2ab2403bc54d379478b794d0641c0, type: 3}
+  - {fileID: 8300000, guid: a0d073d3e166d43c0bc1b7dedcba0aa0, type: 3}
+  - {fileID: 8300000, guid: 737a8dac945ac4bce91939de1ef09cf8, type: 3}
   ToolRadius: 0.01
 --- !u!82 &5582835561078452736
 AudioSource:
@@ -166,7 +172,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -263,7 +269,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 52c44a0bb17ac4452a57b988b6c1556e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -285,7 +291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &881719722191405121
 Transform:
   m_ObjectHideFlags: 0
@@ -337,7 +343,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_Sprite: {fileID: -3543540175793387968, guid: 430f0d76f112d40aea23dcd9911d6919,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -419,7 +425,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_Sprite: {fileID: -8309643413193770608, guid: 430f0d76f112d40aea23dcd9911d6919,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -448,7 +454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7529025355209926657
 Transform:
   m_ObjectHideFlags: 0
