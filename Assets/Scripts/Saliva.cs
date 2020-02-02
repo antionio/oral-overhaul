@@ -53,14 +53,17 @@ public class Saliva : MonoBehaviour
 
             if (level == SalivaLevel.Mid)
             {
+                Face.Instance.StopChoking();
                 AudioSource.volume = 0.6f;
             }
-            else
+            else if (level == SalivaLevel.Full)
             {
                 AudioSource.volume = 1f;
+                Face.Instance.StartChoking();
             }
         } else if (level == SalivaLevel.Low || level == SalivaLevel.None)
         {
+            Face.Instance.StopChoking();
             if (AudioSource.isPlaying)
             {
                 AudioSource.Stop();

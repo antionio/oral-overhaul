@@ -1680,9 +1680,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DontDestroyOnLoad: 0
+  Animator: {fileID: 823404807}
   BloodSpurtParticle: {fileID: 282219036}
   AudioSource: {fileID: 823404808}
   HurtClip: {fileID: 8300000, guid: 45e2ab2403bc54d379478b794d0641c0, type: 3}
+  ChokingClip: {fileID: 8300000, guid: b98461ea9f2a642fcb28fa15a6269c20, type: 3}
   AudioIntervalSeconds: 2
   Eyes:
   - {fileID: 17357676}

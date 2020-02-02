@@ -5,15 +5,18 @@ using UnityEngine;
 
 public class Face : SingletonBehaviour<Face>
 {
-    
+
+    public Animator Animator;
     public ParticleSystem BloodSpurtParticle;
     public AudioSource AudioSource;
     public AudioClip HurtClip;
+    public AudioClip ChokingClip;
     public float AudioIntervalSeconds;
 
     public Eye[] Eyes;
     
     private float audioStateTime;
+    private bool choking;
 
     public void OnUseTool(ToolManager.ToolType toolType)
     {
@@ -31,6 +34,16 @@ public class Face : SingletonBehaviour<Face>
     private void Update()
     {
         audioStateTime += Time.deltaTime;
+
+        if (choking)
+        {
+            Screenshake.Instance.ScreenShake(0.01f, 0.2f);
+            
+            if (AudioSource.isPlaying == false) {
+                AudioSource.clip = ChokingClip;
+                AudioSource.Play();
+            }
+        }
     }
 
     public void DoOuchie(bool badOuchie = false)
@@ -53,5 +66,19 @@ public class Face : SingletonBehaviour<Face>
         if (AudioSource.isPlaying == false) {
             AudioSource.PlayOneShot(HurtClip);
         }
+    }
+
+    public void StartChoking()
+    {
+        if (choking) return;
+        choking = true;
+        Animator.SetTrigger("Choke");
+    }
+
+    public void StopChoking()
+    {
+        if (choking == false) return;
+        choking = false;
+        Animator.SetTrigger("Idle");
     }
 }
