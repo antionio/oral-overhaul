@@ -54,9 +54,9 @@ public class Tooth : MonoBehaviour
             AddToothScrap();
         }
         
-        // about 3% chance that tooth is missing
+        // about 5% chance that tooth is missing
         random = UnityEngine.Random.Range(0, 100);
-        if (random < 3)
+        if (random < 5)
         {
             SetToothCondition(ToothCondition.Broken);
         }
