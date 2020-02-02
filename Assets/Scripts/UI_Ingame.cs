@@ -15,6 +15,8 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
     [Header("Music")]
     public AudioClip MusicIntro;
     public AudioClip MusicIngame;
+    public AudioClip OralOverhaulIntro;
+    public AudioSource OralOverhaulAudioSource;
     public AudioSource MusicAudioSource;
 
     private bool allowSkip = false;
@@ -48,6 +50,8 @@ public class UI_Ingame : SingletonBehaviour<UI_Ingame>
     public void BeginStartGameSequence()
     {
         if (allowSkip == false) return;
+        
+        OralOverhaulAudioSource.PlayOneShot(OralOverhaulIntro);
         
         allowSkip = false;
         Cursor.visible = true;
