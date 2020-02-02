@@ -40,16 +40,25 @@ public class Tooth : MonoBehaviour
     {
         SetToothCondition(toothCondition);
         
+        // about 50% chance that there is a cavity
         var random = UnityEngine.Random.Range(0, 100);
-        if (random < 50)
+        if (random <= 50)
         {
             SetToothCondition(ToothCondition.Decay);
         }
         
+        // about 10% chance that there is scrap on the tooth
         random = UnityEngine.Random.Range(0, 100);
-        if (random < 10)
+        if (random <= 10)
         {
             AddToothScrap();
+        }
+        
+        // about 3% chance that tooth is missing
+        random = UnityEngine.Random.Range(0, 100);
+        if (random < 3)
+        {
+            SetToothCondition(ToothCondition.Broken);
         }
     }
 
