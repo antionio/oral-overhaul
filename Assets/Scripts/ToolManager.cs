@@ -145,7 +145,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                                 MirrorText.color = Color.green;
                                 break;
                             case Tooth.ToothCondition.Broken:
-                                MirrorText.text = "+-0";
+                                MirrorText.text = "0";
                                 MirrorText.color = Color.yellow;
                                 break;
                             case Tooth.ToothCondition.Decay:

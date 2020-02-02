@@ -3,6 +3,9 @@
 public class EndMenu : MonoBehaviour
 {
 
+    public AudioSource AudioSource;
+    public AudioClip GoodjobClip;
+    public AudioClip ToobadClip;
     public Animator Animator;
     public ParticleSystem SparklesParticle;
     public ParticleSystem SparklesParticle2;
@@ -18,12 +21,20 @@ public class EndMenu : MonoBehaviour
         
         bool goodJob = CalculateScores(allTooths);
         
-        if (goodJob) {
+        if (goodJob)
+        {
+            AudioSource.clip = GoodjobClip;
+            AudioSource.Play();
+            
             SparklesParticle.Play();
             SparklesParticle2.Play();
             Animator.SetTrigger("Goodjob");
             return;
         }
+        
+        AudioSource.clip = ToobadClip;
+        AudioSource.Play();
+        
         SparklesParticle.Stop();
         SparklesParticle2.Stop();
         Animator.SetTrigger("Toobad");
