@@ -75,6 +75,12 @@ public class ToolManager : SingletonBehaviour<ToolManager>
 
     public void SetTool(ToolType toolType)
     {
+        if (AudioSource.isPlaying)
+        {
+            AudioSource.loop = false;
+            AudioSource.Stop();
+        }
+        
         if (toolParticleSystem != null && toolParticleSystem.isPlaying)
             toolParticleSystem.Stop();
         
@@ -105,6 +111,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                 toolParticleSystem.Stop();
             
             Animator.ResetTrigger(SelectedToolType + "_Use");
+            AudioSource.loop = false;
             AudioSource.Stop();
             return true;
         }

@@ -250,7 +250,7 @@ MonoBehaviour:
   ToolSecondaryUseClips:
   - {fileID: 8300000, guid: 3aedbf0ae8ca04f3b8d37138782a45e9, type: 3}
   - {fileID: 8300000, guid: 58eec96582a164de0a75188a418a81a3, type: 3}
-  - {fileID: 8300000, guid: 45e2ab2403bc54d379478b794d0641c0, type: 3}
+  - {fileID: 8300000, guid: 3aedbf0ae8ca04f3b8d37138782a45e9, type: 3}
   - {fileID: 8300000, guid: a0d073d3e166d43c0bc1b7dedcba0aa0, type: 3}
   - {fileID: 8300000, guid: 737a8dac945ac4bce91939de1ef09cf8, type: 3}
   - {fileID: 8300000, guid: 2dd3d185971714af4b83e721bc1e544e, type: 3}

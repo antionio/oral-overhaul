@@ -14,6 +14,8 @@ public class EndMenu : MonoBehaviour
 
     private void OnEnable()
     {
+        ToolManager.Instance.AudioSource.Stop(); // make sure tool sounds will be off
+        
         var allTooths = SetupToothsForUI();
         
         Animator.ResetTrigger("Goodjob");
