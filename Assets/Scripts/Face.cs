@@ -37,6 +37,7 @@ public class Face : SingletonBehaviour<Face>
 
         if (choking)
         {
+            DoOuchie();
             Screenshake.Instance.ScreenShake(0.01f, 0.2f);
             
             if (AudioSource.isPlaying == false) {
