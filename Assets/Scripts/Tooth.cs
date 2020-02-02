@@ -27,6 +27,7 @@ public class Tooth : MonoBehaviour
     public float ToothShatteredTime = 2f;
 
     private ToothCondition toothCondition = ToothCondition.Healthy;
+    private bool numb = false;
 
     public ToothCondition GetToothCondition()
     {
@@ -86,11 +87,18 @@ public class Tooth : MonoBehaviour
 
                 if (toothCondition == ToothCondition.Broken) return;
                 
-                Face.Instance.DoOuchie(true);
+                if (!numb) {
+                    Face.Instance.DoOuchie(true);
+                    Screenshake.Instance.ScreenShake(0.01f, 0.1f);
+                    Animator.SetTrigger("Hit");
+                }
+                else
+                {
+                    Screenshake.Instance.ScreenShake(0.01f, 0.02f);
+                }
                 
                 ToohSpurtParticle.Play();
-                Screenshake.Instance.ScreenShake(0.01f, 0.1f);
-                Animator.SetTrigger("Hit");
+                
 
                 toothShatteredTimeCounter += Time.deltaTime;
                 if (toothShatteredTimeCounter >= ToothShatteredTime)
@@ -110,18 +118,22 @@ public class Tooth : MonoBehaviour
                 
                 break;
             case ToolManager.ToolType.Mirror:
+                if (numb) return;
                 Face.Instance.DoOuchie();
                 Animator.SetTrigger("Hit");
                 break;
             case ToolManager.ToolType.Scraper:
+                if (numb) return;
                 Face.Instance.DoOuchie();
                 Screenshake.Instance.ScreenShake(0.1f, 0.025f);
                 Animator.SetTrigger("Hit");
                 break;
             case ToolManager.ToolType.Syringe:
+                if (numb) return;
                 Face.Instance.DoOuchie();
                 Screenshake.Instance.ScreenShake(0.1f, 0.025f);
                 Animator.SetTrigger("Hit");
+                numb = true;
                 break;
         }
         
