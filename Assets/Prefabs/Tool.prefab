@@ -248,7 +248,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 81ad405e61a264a7481b0b6fccdccb9d, type: 3}
   - {fileID: 8300000, guid: 479c5c43972ed4b43a2847d2ae0acf6d, type: 3}
   ToolSecondaryUseClips:
-  - {fileID: 8300000, guid: 0922450a310524ce591c6bf6c61c7fa4, type: 3}
+  - {fileID: 8300000, guid: 3aedbf0ae8ca04f3b8d37138782a45e9, type: 3}
   - {fileID: 8300000, guid: 58eec96582a164de0a75188a418a81a3, type: 3}
   - {fileID: 8300000, guid: 45e2ab2403bc54d379478b794d0641c0, type: 3}
   - {fileID: 8300000, guid: a0d073d3e166d43c0bc1b7dedcba0aa0, type: 3}
