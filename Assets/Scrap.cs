@@ -11,6 +11,10 @@ public class Scrap : MonoBehaviour
         {
             gameObject.SetActive(false);            
         }
+        else if (toolType == ToolManager.ToolType.Waterer)
+        {
+            gameObject.SetActive(false);
+        }
     }
     
 }
