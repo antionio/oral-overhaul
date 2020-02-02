@@ -9,6 +9,7 @@ TagManager:
   - Tongue
   - Eye
   - Saliva
+  - Scrap
   layers:
   - Default
   - TransparentFX

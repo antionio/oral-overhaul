@@ -233,7 +233,25 @@ public class ToolManager : SingletonBehaviour<ToolManager>
         var hits = Physics2D.CircleCastAll(transform.position, ToolRadius, Vector2.zero);
         if (hits.Length > 0)
         {
-            // first check tooth
+            // very hacky raycast priority solution :D
+            
+            foreach (RaycastHit2D h in hits)
+            {
+                if (h.collider.CompareTag("Scrap"))
+                {
+                    h.collider.gameObject.SendMessage("OnUseTool", SelectedToolType, SendMessageOptions.RequireReceiver);
+
+                    if (AudioSource.isPlaying == false)
+                    {
+                        AudioSource.clip = ToolUseClips[(int) SelectedToolType];
+                        AudioSource.loop = false;
+                        AudioSource.Play();
+                    }
+
+                    return; // do not proceed, tooth is prioritized
+                }
+            }
+
             foreach (RaycastHit2D h in hits)
             {
                 if (h.collider.CompareTag("Tooth"))
@@ -250,8 +268,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                     return; // do not proceed, tooth is prioritized
                 }
             }
-            
-            // second check tongue
+
             foreach (RaycastHit2D h in hits)
             {
                 if (h.collider.CompareTag("Saliva"))
@@ -268,8 +285,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                     return;
                 }
             }
-            
-            // second check tongue
+
             foreach (RaycastHit2D h in hits)
             {
                 if (h.collider.CompareTag("Tongue"))
@@ -286,8 +302,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                     return;
                 }
             }
-            
-            // check eyes
+
             foreach (RaycastHit2D h in hits)
             {
                 if (h.collider.CompareTag("Eye"))
@@ -304,8 +319,7 @@ public class ToolManager : SingletonBehaviour<ToolManager>
                     return;
                 }
             }
-            
-            // check face
+
             foreach (RaycastHit2D h in hits)
             {
                 if (h.collider.CompareTag("Face"))

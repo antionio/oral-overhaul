@@ -42,8 +42,20 @@ public class Tooth : MonoBehaviour
         var random = UnityEngine.Random.Range(0, 100);
         if (random < 50)
         {
-            SetToothCondition(ToothCondition.Decay);    
+            SetToothCondition(ToothCondition.Decay);
         }
+        
+        random = UnityEngine.Random.Range(0, 100);
+        if (random < 10)
+        {
+            AddToothScrap();
+        }
+    }
+
+    private void AddToothScrap()
+    {
+        var scrap = GetComponentInChildren<Scrap>(true);
+        scrap.gameObject.SetActive(true);
     }
 
     private void SetToothCondition(ToothCondition toothCondition)
