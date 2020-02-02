@@ -14,7 +14,8 @@ public class Saliva : MonoBehaviour
         Mid = 2,
         Full = 3
     }
-    
+
+    public AudioSource AudioSource;
     public Animator Animator;
     public Collider2D Collider;
     public float SalivaIncreaseInterval = 10f;
@@ -41,6 +42,29 @@ public class Saliva : MonoBehaviour
             if (level == SalivaLevel.Full) return;
             SetLevel(level + 1);
             salivaTimer = 0f;
+        }
+
+        if (level == SalivaLevel.Mid || level == SalivaLevel.Full)
+        {
+            if (AudioSource.isPlaying == false)
+            {
+                AudioSource.Play();
+            }
+
+            if (level == SalivaLevel.Mid)
+            {
+                AudioSource.volume = 0.6f;
+            }
+            else
+            {
+                AudioSource.volume = 1f;
+            }
+        } else if (level == SalivaLevel.Low || level == SalivaLevel.None)
+        {
+            if (AudioSource.isPlaying)
+            {
+                AudioSource.Stop();
+            }
         }
     }
 
