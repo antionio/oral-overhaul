@@ -90,6 +90,13 @@ public class EndMenu : MonoBehaviour
                     score += 1;
                     break;
             }
+
+            //scraps give minus too
+            var scrap = t.GetComponentInChildren<Scrap>(true);
+            if (scrap != null && scrap.isActiveAndEnabled)
+            {
+                score -= 1;
+            }
         }
 
         return score > -1;
