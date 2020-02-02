@@ -365,12 +365,17 @@ PrefabInstance:
     - target: {fileID: 1146207561010240329, guid: 567b387d45ff34d908e9d4f63bbb972f,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1146207561010240329, guid: 567b387d45ff34d908e9d4f63bbb972f,
         type: 3}
       propertyPath: looping
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146207561010240329, guid: 567b387d45ff34d908e9d4f63bbb972f,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567b387d45ff34d908e9d4f63bbb972f, type: 3}

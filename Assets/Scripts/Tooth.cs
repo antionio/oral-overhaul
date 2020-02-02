@@ -106,8 +106,8 @@ public class Tooth : MonoBehaviour
                     Screenshake.Instance.ScreenShake(0.01f, 0.02f);
                 }
                 
-                ToohSpurtParticle.Play();
-                
+                if (ToohSpurtParticle.isPlaying == false)
+                    ToohSpurtParticle.Play();
 
                 toothShatteredTimeCounter += Time.deltaTime;
                 if (toothShatteredTimeCounter >= ToothShatteredTime)
