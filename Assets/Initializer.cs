@@ -7,7 +7,7 @@ public class Initializer : MonoBehaviour
 {
     private void Awake()
     {
-        Screen.SetResolution(720, 1280, false);
+        Screen.SetResolution(360, 640, false);
         Application.targetFrameRate = 60;
     }
 }
